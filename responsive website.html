@@ -1,0 +1,787 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Educational Responsive Website</title>
+    <style>
+
+/* CSS */
+.navbar {
+  background-color: #ce2cda;
+  padding: 1em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  width: 40px;
+  height: 40px;
+  border-radius: 40px;
+  margin-right: 10px;
+}
+
+.nav-links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.nav-links li {
+  margin-right: 20px;
+}
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.2s ease;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.nav-links a:hover {
+  color: #ccc;
+}
+
+.home{
+    background-color: aqua;
+    justify-content: center;
+    align-items: center;
+    margin: 0px;
+    padding: 0px;
+    
+}
+
+.home img {
+    display: contents;
+    height: 92px;
+    width: 92px;
+}
+
+img{
+        padding-top: 0px;
+        padding-left: 0px;
+        margin-left: 0px;
+        width: 2000px;
+        height: 1000px;
+       }
+       /* Global Styles */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #f9f9f9;
+}
+
+/* Welcome Section */
+
+.welcome {
+  padding: 40px;
+  text-align: center;
+}
+
+.welcome h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  text-decoration: underline;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.welcome p {
+  font-size: 30px;
+  font-family: 'Times New Roman', Times, serif;
+  margin-bottom: 40px;
+}
+
+.welcome button {
+  background-color: #4CAF50;
+  color: #fff;
+  border: none;
+  padding: 15px 25px;
+  font-size: 18px;
+  font-family: 'Times New Roman', Times, serif;
+  cursor: pointer;
+}
+
+.welcome button:hover {
+  background-color: #3e8e41;
+}
+
+/* Featured Courses Section */
+
+.featured-courses {
+  padding: 2px;
+  margin: 2px;
+  display: grid;
+  text-decoration: underline;
+  font-size: 25px;
+  font-family: 'Times New Roman', Times, serif;
+ flex-direction: row;
+  justify-content:center;
+  align-content:first baseline;
+}
+
+.course {
+  margin: 30px;
+  height: 300px;
+  width: 300px;
+  background-color: #fff;
+  padding: 20px;
+  
+  border: 5px solid #d95050;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.course img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  margin-bottom: 20px;
+}
+
+.course h3 {
+  font-size: 28px;
+  font-family: 'Times New Roman', Times, serif;
+  margin-bottom: 30px;
+}
+
+.course p {
+  font-size: 25px;
+  margin-bottom: 20px;
+  font-family: 'Times New Roman', Times, serif;
+  text-overflow: ellipsis;
+  text-decoration: none;
+}
+
+.course button {
+  background-color: #4CAF50;
+  color: #fff;
+  border: none;
+  padding: 8px 15px;
+  font-size: 15px;
+  cursor: pointer;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.course button:hover {
+  background-color: #3e8e41;
+}
+
+/* Call to Action Section */
+
+.cta {
+  padding: 40px;
+  text-align: center;
+  background-color: #4CAF50;
+  color: #fff;
+}
+
+.cta h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.cta p {
+  font-size: 18px;
+  font-family: 'Times New Roman', Times, serif;
+  margin-bottom: 40px;
+}
+
+.cta button {
+  background-color: #fff;
+  color: #4CAF50;
+  border: none;
+  padding: 10px 20px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.cta button:hover {
+  background-color: #3e8e41;
+  color: #fff;
+}
+
+/* Responsive Styles */
+
+@media (max-width: 768px) {
+  .hero {
+    height: 50px;
+  }
+  .welcome {
+    padding: 20px;
+  }
+  .featured-courses {
+    flex-direction: row;
+  }
+  .course {
+    width: 200%;
+    margin: 20px;
+  }
+  .cta {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero {
+    height: 30px;
+  }
+  .welcome {
+    padding: 10px;
+  }
+  .featured-courses {
+    flex-direction: row;
+  }
+  .course {
+    width: 200%;
+    margin: 15px;
+  }
+  .cta {
+    padding: 10px;
+  }
+}
+
+/* About Section */
+
+.about {
+    background-color: coral;
+   
+  padding:  25px;
+  background-color: #fc8888;
+}
+
+.about-header {
+  text-align: center;
+  margin-bottom:  20px;
+}
+
+.about-header h2 {
+  font-size: 40px;
+  text-decoration: underline;
+  font-family: 'Times New Roman', Times, serif;
+  margin-bottom: 10px;
+}
+
+.about-header p {
+  font-size: 18px;
+  font-family: 'Times New Roman', Times, serif;
+  margin-bottom: 20px;
+}
+
+/* Our Mission */
+
+.our-mission {
+  margin-bottom: 40px;
+}
+
+.our-mission h3 {
+  font-size: 30px;
+  margin-bottom: 10px;
+  text-decoration: underline;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.our-mission p {
+  font-size: 20px;
+  font-family: 'Times New Roman', Times, serif;
+  margin-bottom: 20px;
+}
+
+.our-mission ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.our-mission ul li {
+  margin-bottom: 10px;
+}
+
+.our-mission ul li:before {
+  content: "\2022";
+  font-size: 18px;
+  font-family: 'Times New Roman', Times, serif;
+  color: #4CAF50;
+  margin-right: 10px;
+}
+
+/* Our Team */
+
+.our-team {
+  margin-bottom: 40px;
+}
+
+.our-team h3 {
+  font-size: 30px;
+  margin-bottom: 10px;
+  text-decoration: underline;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+}
+
+.team-member {
+  background-color: #fff;
+  padding: 20px;
+  border: 1px solid #ddd;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.team-member h4 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.team-member p {
+  font-size: 16px;
+  margin-bottom: 20px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+/* Testimonials */
+
+.testimonials {
+  margin-bottom: 40px;
+}
+
+.testimonials h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.testimonial-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+}
+
+.testimonial {
+  background-color: #fff;
+  padding: 20px;
+  border: 1px solid #ddd;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial p {
+  font-size: 16px;
+  margin-bottom: 20px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.testimonial h4 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+/* Responsive Styles */
+
+@media (max-width: 768px) {
+  .team-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .testimonial-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .team-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .testimonial-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+/* Contact Section */
+
+.contact {
+  padding: 40px;
+  
+  background-color: #8475f1;
+}
+
+.contact-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.contact-header h2 {
+  font-size: 40px;
+  text-decoration: underline;
+  font-family: 'Times New Roman', Times, serif;
+  margin-bottom: 10px;
+}
+
+.contact-header p {
+  font-size: 18px;
+  font-family: 'Times New Roman', Times, serif;
+  margin-bottom: 20px;
+}
+
+/* Contact Information */
+
+.contact-info {
+  margin-bottom: 40px;
+}
+
+.contact-info h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.contact-info ul {
+  list-style: none;
+  font-family: 'Times New Roman', Times, serif;
+  padding: 0;
+  margin: 0;
+}
+
+.contact-info ul li {
+  margin-bottom: 10px;
+}
+
+.contact-info ul li i {
+  font-size: 18px;
+  font-family: 'Times New Roman', Times, serif;
+  color: #4CAF50;
+  margin-right: 10px;
+}
+
+.contact-info ul li span {
+  font-size: 18px;
+  font-weight: bold;
+  font-family: 'Times New Roman', Times, serif;
+  margin-right: 10px;
+}
+
+/* Contact Form */
+
+.contact-form {
+  margin-bottom: 40px;
+}
+
+.contact-form h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.contact-form input[type="text"], .contact-form input[type="email"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 5px solid #fafdfd;
+}
+
+.contact-form textarea {
+  width: 60vw;
+  
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 5px solid #f4f9fc;
+  height: 40vh;
+}
+
+.contact-form button[type="submit"] {
+  background-color: #4CAF50;
+  color: #fff;
+  padding: 10px 50px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.contact-form button[type="submit"]:hover {
+  background-color: #3e8e41;
+}
+
+/* Social Media Links */
+
+.social-links {
+  margin-bottom: 40px;
+}
+
+.social-links h3 {
+  font-size: 30px;
+  margin-bottom: 20px;
+  font-family:'Times New Roman', Times, serif
+}
+h4 a{
+  padding: 5px;
+  margin: 5px;
+}
+
+.social-links ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.social-links ul li {
+  margin: 0 10px;
+}
+
+.social-links ul li a {
+  font-size: 24px;
+  color: #4CAF50;
+}
+
+.social-links ul li a:hover {
+  color: #3e8e41;
+}
+
+/* Responsive Styles */
+
+@media (max-width: 768px) {
+  .contact-info ul {
+    flex-direction: column;
+  }
+  .contact-form input[type="text"], .contact-form input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+  }
+  .social-links ul {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-header h2 {
+    font-size: 25px;
+  }
+  .contact-info h3 {
+    font-size: 18px;
+  }
+  .contact-form h3 {
+    font-size: 18px;
+  }
+  .social-links h3 {
+    font-size: 18px;
+  }
+}
+    </style>
+</head>
+<body>
+    
+    <!-- HTML -->
+  
+<nav class="navbar">
+  <a class="navbar-brand" href="#">
+    <img src="https://i.pinimg.com/564x/44/bd/28/44bd283ec63956d10ff8fbe4859ba3b6.jpg" alt="Logo" class="logo">
+  </a>
+    <a href="#" class="logo">
+      <i class="fas fa-graduation-cap"></i>
+    </a>
+    <ul class="nav-links">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Courses</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+
+  <img src="https://i.pinimg.com/736x/be/de/f0/bedef0d2190ac5bf827036249fa1e5b1.jpg">
+
+
+  <!-- Home Section -->
+<section id="home" class="home">
+    
+    <!-- Welcome Message -->
+    <div class="welcome">
+      <h1>Welcome to Our Educational Platform</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor, vestibulum magna sed, convallis ex.</p>
+      <button class="btn">Learn More</button>
+    </div>
+  
+    <!-- Featured Courses -->
+    <div class="featured-courses">
+      <h2>Featured Courses</h2>
+      <div class="course-grid">
+        <div class="course">
+          <img src="images/course1.jpg" alt="Course 1">
+          <h3>Course 1: Introduction to Programming</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <button class="btn">Enroll Now</button>
+        </div>
+       
+        
+        <div class="course">
+          <img src="images/course2.jpg" alt="Course 2">
+          <h3>Course 2: Data Science Fundamentals</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <button class="btn">Enroll Now</button>
+        </div>
+        <div class="course">
+          <img src="images/course3.jpg" alt="Course 3">
+          <h3>Course 3:  Full Stack Web Development </h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <button class="btn">Enroll Now</button>
+        </div>
+       
+      </div>
+    </div>
+  
+    <!-- Call to Action -->
+    <div class="cta">
+      <h2>Get Started Today!</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor, vestibulum magna sed, convallis ex.</p>
+      <button class="btn">Sign Up</button>
+    </div>
+  </section>
+  <img src="https://i.pinimg.com/736x/5b/ba/41/5bba415085ef0283665fb274092f7944.jpg">
+
+  <!-- About Section -->
+<section id="about" class="about">
+    <!-- About Header -->
+    <div class="about-header">
+      <h2>About Us</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor, vestibulum magna sed, convallis ex.</p>
+    </div>
+  
+    <!-- Our Mission -->
+    <div class="our-mission">
+      <h3>Our Mission</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor, vestibulum magna sed, convallis ex.</p>
+      <ul>
+        <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+        <li>Sed sit amet nulla auctor, vestibulum magna sed, convallis ex.</li>
+        <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+      </ul>
+    </div>
+  
+    <!-- Our Team -->
+    <div class="our-team">
+      <h3>Our Team</h3>
+      <div class="team-grid">
+        <div class="team-member">
+          
+          <h4>John Doe</h4>
+          <p>Founder & CEO</p>
+        </div>
+        <div class="team-member">
+          
+          <h4>Jane Doe</h4>
+          <p>Co-Founder & CTO</p>
+        </div>
+        <div class="team-member">
+         
+          <h4>Bob Smith</h4>
+          <p>Lead Instructor</p>
+        </div>
+      </div>
+    </div>
+  
+    <!-- Testimonials -->
+    <div class="testimonials">
+      <h3>What Our Students Say</h3>
+      <div class="testimonial-grid">
+        <div class="testimonial">
+          <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor, vestibulum magna sed, convallis ex."</p>
+          <h4>John Doe, Student</h4>
+        </div>
+        <div class="testimonial">
+          <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor, vestibulum magna sed, convallis ex."</p>
+          <h4>Jane Doe, Student</h4>
+        </div>
+        <div class="testimonial">
+          <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor, vestibulum magna sed, convallis ex."</p>
+          <h4>Bob Smith, Student</h4>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+<section id="contact" class="contact">
+    <!-- Contact Header -->
+    <div class="contact-header">
+      <h2>Get in Touch</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor, vestibulum magna sed, convallis ex.</p>
+    </div>
+  
+    <!-- Contact Information -->
+    <div class="contact-info">
+      <h3>Contact Information</h3>
+      <ul>
+        <li>
+          <i class="fas fa-map-marker-alt"></i>
+          <span>Address:</span>
+          <p>123 Main St, Anytown, USA 12345</p>
+        </li>
+        <li>
+          <i class="fas fa-phone"></i>
+          <span>Phone:</span>
+          <p>(123) 456-7890</p>
+        </li>
+        <li>
+          <i class="fas fa-envelope"></i>
+          <span>Email:</span>
+          <p><a href="mailto:info@example.com">info@example.com</a></p>
+        </li>
+      </ul>
+    </div>
+  
+    <!-- Contact Form -->
+    <div class="contact-form">
+      <h3>Send Us a Message</h3>
+      <form>
+        <input type="text" name="name" placeholder="Name">
+        <input type="email" name="email" placeholder="Email">
+        <textarea name="message" placeholder="Message"></textarea>
+        <button type="submit">Send</button>
+      </form>
+    </div>
+  
+    <!-- Social Media Links -->
+    
+    <div class="social-links">
+      <h3>Follow Us at :</h3>
+      <h4><a>Facebook : </a></h4>
+      <h4><a>Twitter :</a></h4>
+      <h4><a>Instagram : </a></h4>
+      <h4><a>Linked-in :</a></h4>
+      <ul>
+        <li>
+          <a href="https://www.facebook.com" target=_blank">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.twitter.com" target="_blank">
+            <i class="fab fa-twitter"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.instagram.com" target="_blank">
+            <i class="fab fa-instagram"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.linkedin.com" target="_blank">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </section>
+</body>
+</html>
